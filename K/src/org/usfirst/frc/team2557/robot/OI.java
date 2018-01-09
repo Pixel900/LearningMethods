@@ -1,27 +1,21 @@
 package org.usfirst.frc.team2557.robot;
-
-import edu.wpi.first.wpilibj.GamepadBase;
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-
-import org.usfirst.frc.team2557.robot.commands.ExampleCommand;
-import e
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
 	public static Joystick joystick1;
-	public static GamepadBase gamepad1;
+
 	
-	public static JoystickButton joystickButton1;
-	public static JoystickButton joystickButton2;
+	public JoystickButton joystickButton1;
+	public JoystickButton joystickButton2;
 	
 	public void OIInit() {
 		joystick1 = new Joystick(0);
 		
-		JoystickButton button = new JoystickButton(joystick1, 0);
+		joystickButton1 = new JoystickButton(joystick1, 0);
 		
 	
 
