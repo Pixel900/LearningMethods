@@ -9,9 +9,9 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import org.usfirst.frc.team2557.robot.commands.ArmChangeCommand;
-import org.usfirst.frc.team2557.robot.commands.ExampleCommand;
-import org.usfirst.frc.team2557.robot.subsystems.ExampleSubsystem;
+//import org.usfirst.frc.team2557.robot.commands.ArmChangeCommand;
+//import org.usfirst.frc.team2557.robot.commands.ExampleCommand;
+//import org.usfirst.frc.team2557.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team2557.robot.subsystems.ServoSubsystem;
 import org.usfirst.frc.team2557.robot.commands.ServoCommand;
 
@@ -24,9 +24,8 @@ import org.usfirst.frc.team2557.robot.commands.ServoCommand;
  */
 public class Robot extends IterativeRobot {
 
-	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
-	public static ServoSubsystem ServoSubsystem;
+	public static org.usfirst.frc.team2557.robot.subsystems.ServoSubsystem ServoSubsystem;
 	public static ServoCommand ServoCommand;
 //	public static Arm Arm;
 	
@@ -47,7 +46,7 @@ public class Robot extends IterativeRobot {
 		ServoCommand = new ServoCommand();
 		
 		//ArmChangeCommand = new ArmChangeCommand();
-		chooser.addDefault("Default Auto", new ExampleCommand());
+		//chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 	}
